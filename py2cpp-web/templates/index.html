@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python to C++ Converter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/dracula.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GEHU🐍 Python ➜ C++ Converter</h1>
+        <button id="theme-toggle">Toggle Theme</button>
+
+        <form method="POST">
+            <h3>Python Code</h3>
+            <textarea id="code" name="code">{{ request.form.code or '' }}</textarea>
+            <br>
+            <button type="submit">Convert</button>
+        </form>
+
+        {% if output %}
+            <h3>C++ Output</h3>
+            <textarea id="output" readonly>{{ output }}</textarea>
+        {% endif %}
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/python/python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/clike/clike.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
