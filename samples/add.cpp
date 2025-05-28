@@ -1,4 +1,4 @@
-// generate by py2cpp
+// generate by py2cpp1
 // original source code: samples/add.py
 #include "py2cpp/py2cpp.hpp"
 
