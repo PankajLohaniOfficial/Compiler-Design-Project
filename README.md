@@ -152,4 +152,4 @@ Contributions are welcome! If you'd like to improve this project, feel free to f
 
 # 📜 Contact
 
-Fell free for contacting in the gmail - [Email](pankajlohani2023@gmail.com)
+Fell free for contacting in the gmail - (pankajlohani2023@gmail.com)
