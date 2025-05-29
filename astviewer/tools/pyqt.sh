@@ -1,4 +1,5 @@
-#! /usr/bin/env bash
+#! /usr/bin/env bash                     
+#tells os to run script using bash shell
 
 script_dir=$(cd $(dirname ${BASH_SOURCE:-$0}); pwd)
 
